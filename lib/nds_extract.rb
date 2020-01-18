@@ -28,14 +28,10 @@ def directors_totals(nds)
     counter = 0
     while counter < nds.length do
       key = nds[counter][:name]
-      puts key
-
-      inner_counter = 0
       value = gross_for_director(nds[counter])
-
-    puts value
-    counter += 1
-    result[key] = value
+      counter += 1
+    
+      result[key] = value
     end
     
   result
